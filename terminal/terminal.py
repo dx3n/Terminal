@@ -20,13 +20,13 @@ def show_help(commands):
     print('math        -> open math mode')
     print('tree        -> print content of input path')
 def modify_string(string):
-    string = string.replace(" ", "")
-    return string
+    return string.replace(" ", "")
 def numbers_in_string(string):
+        string = string.lower()
         alphabet = 'abcdefghijklmnopqrstuvwxyz'
         numbers = '1234567890'
         for i in range(len(alphabet)):
-            if alphabet[i] in string.lower():
+            if alphabet[i] in string:
                 return False
         for i in numbers:
             if i in string:
